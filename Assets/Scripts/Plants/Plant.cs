@@ -13,7 +13,10 @@ public class Plant : MonoBehaviour
 
     [field: SerializeField]
     public EToughness ToughnessType { get; private set; } = EToughness.kNormal;
-    
+
+    [field: SerializeField]
+    public Sprite IconSprite { get; private set; } = null;
+
     public float RechargeTime { get; private set; }
     public float Toughness { get; private set; }
 

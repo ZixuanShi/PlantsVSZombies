@@ -102,8 +102,8 @@ MonoBehaviour:
   - {fileID: 1669331228664346917}
   - {fileID: 626452478191074527}
   m_Bounds:
-    m_Center: {x: 0.0010949969, y: 0.0020150244, z: 0}
-    m_Extent: {x: 0.38208508, y: 0.29757506, z: 0}
+    m_Center: {x: -0.0183298, y: -0.46087012, z: 0}
+    m_Extent: {x: 0.38208508, y: 0.29757503, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 312865066199360873}
   - component: {fileID: 1402962636160706335}
   - component: {fileID: 1402962636160706334}
+  - component: {fileID: 2043016945902398941}
   m_Layer: 0
   m_Name: Sunflower
   m_TagString: Untagged
@@ -133,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486078795230903562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.09, y: 2.23, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -180,7 +181,33 @@ MonoBehaviour:
   <Cost>k__BackingField: 50
   <RechargeType>k__BackingField: 5
   <ToughnessType>k__BackingField: 10
-  <Icon>k__BackingField: {fileID: 2800000, guid: 32fb78ef9e8135a45a690e124e1e5424, type: 3}
+  <IconSprite>k__BackingField: {fileID: 21300000, guid: 32fb78ef9e8135a45a690e124e1e5424, type: 3}
+--- !u!61 &2043016945902398941
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486078795230903562}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1596098820860845521
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596098820860845521}
   m_LocalRotation: {x: 0, y: 0, z: 0.80405295, w: 0.5945577}
-  m_LocalPosition: {x: 0.06720981, y: 0.14886963, z: 0}
+  m_LocalPosition: {x: 0.047784954, y: -0.31401554, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -315,8 +342,8 @@ MonoBehaviour:
   - {fileID: 626452478191074527}
   - {fileID: 2913237950777735842}
   m_Bounds:
-    m_Center: {x: 0.0016500056, y: -0.00044501573, z: 0}
-    m_Extent: {x: 0.26335007, y: 0.10955499, z: 0}
+    m_Center: {x: -0.01777482, y: -0.46333027, z: 0}
+    m_Extent: {x: 0.26335007, y: 0.10955502, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -485,7 +512,7 @@ MonoBehaviour:
   - {fileID: 626452478191074527}
   - {fileID: 2913237950777735842}
   m_Bounds:
-    m_Center: {x: -0.00095000863, y: -0.0016749799, z: 0}
+    m_Center: {x: -0.020374805, y: -0.4645603, z: 0}
     m_Extent: {x: 0.3981601, y: 0.19832501, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -592,8 +619,8 @@ MonoBehaviour:
   - {fileID: 626452478191074527}
   - {fileID: 1669331228664346917}
   m_Bounds:
-    m_Center: {x: 0.000000014901161, y: 0.00000010430813, z: 0}
-    m_Extent: {x: 0.095, y: 0.15499988, z: 0}
+    m_Center: {x: -0.01942484, y: -0.46288514, z: 0}
+    m_Extent: {x: 0.09500003, y: 0.15499999, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

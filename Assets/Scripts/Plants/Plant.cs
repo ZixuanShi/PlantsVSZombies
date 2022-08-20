@@ -15,14 +15,19 @@ public class Plant : MonoBehaviour
     public EToughness ToughnessType { get; private set; } = EToughness.kNormal;
 
     [field: SerializeField]
+    public EDamage DamageType { get; private set; } = EDamage.kNormal;
+
+    [field: SerializeField]
     public Sprite IconSprite { get; private set; } = null;
 
     public float RechargeTime { get; private set; }
     public float Toughness { get; private set; }
+    public float Damage { get; private set; }
 
     private void Awake()
     {
         RechargeTime = (float)RechargeType;
         Toughness = (float)ToughnessType;
+        Damage = (float)DamageType;
     }
 }

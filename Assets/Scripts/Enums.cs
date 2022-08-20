@@ -25,3 +25,10 @@ public enum ERange
     kShort = 3,
     kLong = 20,
 }
+
+// Damage to deal per attack
+public enum EDamage
+{
+    kNone = 0,
+    kNormal = 5,
+}

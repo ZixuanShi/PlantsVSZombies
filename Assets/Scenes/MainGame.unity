@@ -755,6 +755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_chosenPlants:
   - {fileID: 1402962636160706334, guid: 0100ede06452295479af053a4904f051, type: 3}
+  - {fileID: -3097385197637068143, guid: 3cd9e2e3b0020e247b4b90259db98fbe, type: 3}
   m_plantResourcesBar_Panel: {fileID: 1841302254}
   <SelectedPlant_Image>k__BackingField: {fileID: 2056582165}
 --- !u!4 &1006502714
@@ -770,7 +771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1007219874
 GameObject:
@@ -2191,6 +2192,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1765299405398538529, guid: 4c70dacf009ef6145a0bdad35cabdaa3, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1765299405427218136, guid: 4c70dacf009ef6145a0bdad35cabdaa3, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -2329,7 +2334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765299406064899602, guid: 4c70dacf009ef6145a0bdad35cabdaa3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1765299406064899602, guid: 4c70dacf009ef6145a0bdad35cabdaa3, type: 3}
       propertyPath: m_LocalPosition.x

@@ -180,6 +180,7 @@ MonoBehaviour:
   <Cost>k__BackingField: 50
   <RechargeType>k__BackingField: 5
   <ToughnessType>k__BackingField: 10
+  <Icon>k__BackingField: {fileID: 2800000, guid: 32fb78ef9e8135a45a690e124e1e5424, type: 3}
 --- !u!1 &1596098820860845521
 GameObject:
   m_ObjectHideFlags: 0

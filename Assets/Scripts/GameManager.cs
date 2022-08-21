@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private List<Plant> m_chosenPlants = new List<Plant>();
 
     [SerializeField]
-    private HorizontalLayoutGroup m_plantResourcesBar_Panel = null;
+    private GameObject m_plantResourcesBar_Panel = null;
 
     [field: SerializeField]
     public Image SelectedPlant_Image { get; set; } = null;

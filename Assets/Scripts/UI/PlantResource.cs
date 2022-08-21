@@ -6,7 +6,6 @@ using UnityEngine;
 /// </summary>
 public class PlantResource : MonoBehaviour
 {
-    [SerializeField] 
     private Plant m_plantPrefab = null;
 
     private TMPro.TextMeshProUGUI m_cost_Text = null;

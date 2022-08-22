@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 1402962636160706335}
   - component: {fileID: 1402962636160706334}
   - component: {fileID: 2043016945902398941}
+  - component: {fileID: 7198059058838621561}
   m_Layer: 0
   m_Name: Sunflower
   m_TagString: Untagged
@@ -209,6 +210,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7198059058838621561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486078795230903562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80ea0e47cfe19643a6c7fe9606b216d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_amount: 50
+  m_cooldown: 5
+  m_sunlightPrefab: {fileID: 438432019419931244, guid: 882d3c3135a5e7d4290d470110c20a28, type: 3}
 --- !u!1 &1596098820860845521
 GameObject:
   m_ObjectHideFlags: 0

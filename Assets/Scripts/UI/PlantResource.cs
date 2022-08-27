@@ -24,9 +24,13 @@ public class PlantResource : MonoBehaviour
     {
         Debug.Assert(m_plantPrefab != null);
 
-        m_gameManager.SelectedPlant = m_plantPrefab;
-        m_gameManager.SelectedPlant_Image.sprite = m_plantIcon_Image.sprite;
-        m_gameManager.SelectedPlant_Image.color = Color.white;
+        if (m_gameManager.SunlightCount >= m_plantPrefab.Cost)
+        {
+            m_gameManager.SelectedPlant = m_plantPrefab;
+            m_gameManager.SelectedPlant_Image.sprite = m_plantIcon_Image.sprite;
+            m_gameManager.SelectedPlant_Image.color = Color.white;
+            m_gameManager.AddSunlightCount(-m_plantPrefab.Cost);
+        }
     }
 
     /// <summary>

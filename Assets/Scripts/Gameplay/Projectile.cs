@@ -14,13 +14,12 @@ public class Projectile : MonoBehaviour
         transform.position += m_speed * Vector3.right * Time.deltaTime;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Zombie zombie = collision.gameObject.GetComponent<Zombie>();
         if (zombie != null)
         {
             zombie.TakeDamage(m_damage);
-
             Destroy(gameObject);
         }
     }

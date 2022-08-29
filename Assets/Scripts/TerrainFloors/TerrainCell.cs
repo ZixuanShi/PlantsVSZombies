@@ -22,7 +22,7 @@ public class TerrainCell : MonoBehaviour
         if (m_gameManager.SelectedPlant != null)
         {
             Vector3 spawnPosition = transform.position;
-            spawnPosition.y -= m_spriteRenderer.size.y / 2.0f;
+            spawnPosition.y -= m_spriteRenderer.size.y / 2.0f; 
 
             Instantiate(m_gameManager.SelectedPlant, spawnPosition, Quaternion.identity);
 

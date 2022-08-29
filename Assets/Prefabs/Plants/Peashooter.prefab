@@ -102,8 +102,8 @@ MonoBehaviour:
   - {fileID: 6130224040914977861}
   - {fileID: 8488884008954544696}
   m_Bounds:
-    m_Center: {x: 0.0011849552, y: -0.000000044703484, z: 0}
-    m_Extent: {x: 0.18881501, y: 0.07499997, z: 0}
+    m_Center: {x: 0.0011850595, y: -0.000000059604645, z: 0}
+    m_Extent: {x: 0.188815, y: 0.07499997, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   - {fileID: 5371055567847604671}
   - {fileID: 6130224040914977861}
   m_Bounds:
-    m_Center: {x: -0.00093501806, y: 0.00032499433, z: 0}
+    m_Center: {x: -0.00093495846, y: 0.00032499433, z: 0}
     m_Extent: {x: 0.3790651, y: 0.22636506, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6130224040914977861}
   m_Bounds:
-    m_Center: {x: 0.000000007450581, y: -0.00067999214, z: 0}
+    m_Center: {x: -0.000000029802322, y: -0.00067999214, z: 0}
     m_Extent: {x: 0.06500001, y: 0.109319985, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -361,10 +361,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6482070068363582963}
   - component: {fileID: 5682177587876799535}
+  - component: {fileID: 4981936823595973179}
   - component: {fileID: 5682177587876799529}
   - component: {fileID: 5682177587876799528}
   - component: {fileID: 4153878950897572855}
-  - component: {fileID: 4981936823595973179}
   m_Layer: 0
   m_Name: Peashooter
   m_TagString: Untagged
@@ -380,7 +380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5277349835266819472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9734082, y: -0.8324201, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -406,7 +406,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5}
+  m_Offset: {x: 0, y: 0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -417,8 +417,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 0.8}
   m_EdgeRadius: 0
+--- !u!50 &4981936823595973179
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277349835266819472}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!95 &5682177587876799529
 Animator:
   serializedVersion: 4
@@ -470,27 +491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 5
   m_projectilePrefab: {fileID: 3992934107361653553, guid: 23f8a48223928d048bf60d4961e2311f, type: 3}
---- !u!50 &4981936823595973179
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5277349835266819472}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!1 &5441771217980056907
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   - {fileID: 8488884008954544696}
   - {fileID: 6130224040914977861}
   m_Bounds:
-    m_Center: {x: -0.0006902516, y: -0.00013500452, z: 0}
+    m_Center: {x: -0.00069001317, y: -0.00013501942, z: 0}
     m_Extent: {x: 0.27871, y: 0.13953501, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

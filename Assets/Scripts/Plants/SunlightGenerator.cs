@@ -28,7 +28,9 @@ public class SunlightGenerator : MonoBehaviour
 
         while (true)
         {
-            Instantiate(m_sunlightPrefab, transform.position, transform.rotation);
+            Sunlight sunlight = Instantiate(m_sunlightPrefab, transform.position, transform.rotation);
+            sunlight.SetAmount(m_amount);
+
             yield return new WaitForSeconds(m_cooldown);
         }
     }

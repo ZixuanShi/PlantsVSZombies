@@ -8,20 +8,24 @@ using UnityEngine;
 public class ObjectBase : MonoBehaviour
 {
     [field: SerializeField]
-    public EToughness ToughnessType { get; private set; } = EToughness.kNormal;
-
-    [field: SerializeField]
-    public EDamage DamageType { get; private set; } = EDamage.kNormal;
-
-    [field: SerializeField]
     public Sprite IconSprite { get; private set; } = null;
 
-    public float Toughness { get; private set; }
-    public float Damage { get; private set; }
+    [field: SerializeField]
+    public int Heath { get; private set; } = 10;
 
-    private void Awake()
+    [field: SerializeField]
+    public int Damage { get; private set; } = 5;
+
+    /// <summary>
+    /// Apply damage to this object, destroy this object if health is below 0
+    /// </summary>
+    /// <param name="damage"></param>
+    public void TakeDamage(int damage)
     {
-        Toughness = (float)ToughnessType;
-        Damage = (float)DamageType;
+        Heath -= damage;
+        if (Heath <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

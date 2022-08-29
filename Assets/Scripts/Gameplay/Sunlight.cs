@@ -13,4 +13,6 @@ public class Sunlight : MonoBehaviour
         FindObjectOfType<GameManager>().AddSunlightCount(m_amount);
         Destroy(gameObject);
     }
+
+    public void SetAmount(int amount) { m_amount = amount; }    
 }

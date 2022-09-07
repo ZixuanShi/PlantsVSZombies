@@ -408,7 +408,7 @@ ScriptedImporter:
     - {x: 25, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -60, y: -58}
+    uvTransform: {x: 41, y: 27}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -704,7 +704,7 @@ ScriptedImporter:
     - {x: 23, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -115, y: -132}
+    uvTransform: {x: -14, y: -47}
   - name: InnerLeg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1022,7 +1022,7 @@ ScriptedImporter:
     - {x: 25, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -52, y: -87}
+    uvTransform: {x: 49, y: -2}
   - name: OuterLeg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1384,7 +1384,7 @@ ScriptedImporter:
     - {x: 29, y: 30}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -138, y: -11}
+    uvTransform: {x: -37, y: 74}
   - name: InnerArm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1658,7 +1658,7 @@ ScriptedImporter:
     - {x: 21, y: 22}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -48, y: -6}
+    uvTransform: {x: 53, y: 79}
   - name: Head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1965,7 +1965,7 @@ ScriptedImporter:
     - {x: 24, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -97, y: -27}
+    uvTransform: {x: 4, y: 58}
   characterData:
     bones: []
     parts:

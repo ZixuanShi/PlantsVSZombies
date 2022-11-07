@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class LinearMover : MonoBehaviour
 {
+    [Tooltip("Which way to move")]
     [SerializeField]
     private Vector3 m_direction = Vector3.left;
 
+    [Tooltip("How fast this object to move")]
     [SerializeField]
     private float m_moveSpeed = 5.0f;
 

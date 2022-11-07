@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 1457001426299367684}
   - component: {fileID: 1457001426299367688}
   - component: {fileID: 1457001426299367686}
+  - component: {fileID: -2040929123409184956}
   m_Layer: 0
   m_Name: RegularZombie
   m_TagString: Untagged
@@ -406,6 +407,20 @@ MonoBehaviour:
   <IconSprite>k__BackingField: {fileID: 0}
   <Heath>k__BackingField: 10
   <Damage>k__BackingField: 5
+--- !u!114 &-2040929123409184956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432004820881969335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff05033d3a32614aa410724a50730f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_direction: {x: -1, y: 0, z: 0}
+  m_moveSpeed: 0.3
 --- !u!1 &1978814811265355045
 GameObject:
   m_ObjectHideFlags: 0

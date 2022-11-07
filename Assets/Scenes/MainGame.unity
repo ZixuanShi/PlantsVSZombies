@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9208505832979878949, guid: 77bc6051f3423684c9db395164c35902, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9208505832979878949, guid: 77bc6051f3423684c9db395164c35902, type: 3}
       propertyPath: m_LocalPosition.x
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_chosenPlants:
   - {fileID: 5973370115127294399, guid: 0100ede06452295479af053a4904f051, type: 3}
-  - {fileID: 5682177587876799528, guid: 3cd9e2e3b0020e247b4b90259db98fbe, type: 3}
+  - {fileID: 9183674067144567844, guid: c2b20336b89a4ce458fdac5a09d69053, type: 3}
   m_plantResourcesBar_Panel: {fileID: 1841302251}
   <SelectedPlant_Image>k__BackingField: {fileID: 2056582165}
   <SunlightCount>k__BackingField: 150
@@ -1437,7 +1437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841302251
 GameObject:
@@ -1983,7 +1983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9208505832979878949, guid: 77bc6051f3423684c9db395164c35902, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9208505832979878949, guid: 77bc6051f3423684c9db395164c35902, type: 3}
       propertyPath: m_LocalPosition.x

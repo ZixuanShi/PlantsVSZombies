@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Debug.Assert(m_chosenPlants.Count <= m_plantResourcesBar_Panel.transform.childCount);
-
+        
         m_sunlightText.text = SunlightCount.ToString();
 
         // For each child of plantResourcesBar_Panel,

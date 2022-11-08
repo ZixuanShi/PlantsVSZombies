@@ -22,7 +22,6 @@ public class ZombieGenerator : MonoBehaviour
         }
 
         int randomSpawningPositionIndex = UnityEngine.Random.Range(0, m_zombieSpawningPositions.Count);
-
         Instantiate(m_chosenZombiePrefabs[0], m_zombieSpawningPositions[randomSpawningPositionIndex], Quaternion.identity);
     }
 }

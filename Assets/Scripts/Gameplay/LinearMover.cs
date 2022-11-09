@@ -12,7 +12,7 @@ public class LinearMover : MonoBehaviour
     [SerializeField]
     private float m_moveSpeed = 5.0f;
 
-    public bool CanMove { get; private set; } = true;
+    public bool CanMove { get; set; } = true;
 
     private void Update()
     {

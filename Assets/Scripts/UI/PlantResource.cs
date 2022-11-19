@@ -31,7 +31,7 @@ public class PlantResource : MonoBehaviour
         Debug.Assert(m_plantPrefab != null);
 
         if (m_gameManager.SunlightCount >= m_plantPrefab.Cost &&    // Has enough sunlight
-            m_gameManager.SelectedPlant != m_plantPrefab)           // 
+            m_gameManager.SelectedPlant != m_plantPrefab)           // Would like to select another plant
         {
             m_gameManager.SelectedPlant = m_plantPrefab;
             m_gameManager.SelectedPlant_Image.sprite = m_plantIcon_Image.sprite;

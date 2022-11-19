@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Generates zombies in waves
+/// Generates zombies in waves, attach to game manager
 /// </summary>
 public class ZombieGenerator : MonoBehaviour
 {

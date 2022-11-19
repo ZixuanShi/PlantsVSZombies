@@ -3,44 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages a match
+/// </summary>
 public class GameManager : MonoBehaviour
 {
+    [Tooltip("The plants got chosen to be used in a match")]
     [SerializeField]
     private List<Plant> m_chosenPlants = new List<Plant>();
-
-    [SerializeField]
-    private GameObject m_plantResourcesBar_Panel = null;
 
     [field: SerializeField]
     public Image SelectedPlant_Image { get; set; } = null;
 
-    [Tooltip("Current sunlight count the player owns. Changed by collecting sunlight or planting plants")]
-    [field: SerializeField]
+    [field: SerializeField][Tooltip("Current sunlight count the player owns. Changed by collecting sunlight or planting plants")]
     public int SunlightCount { get; private set; } = 0;
 
     [SerializeField]
     private TMPro.TMP_Text m_sunlightText = null;
 
+    // The percentage of the completion of the current match. 0 means start, 100 means completed
+    [Range(0.0f, 100.0f)]
+    private float m_progression = 0.0f;
+
     public Plant SelectedPlant { get; set; } = null;
 
     private void Awake()
     {
-        Debug.Assert(m_chosenPlants.Count <= m_plantResourcesBar_Panel.transform.childCount);
+        PlantRecourcesBar_Panel plantResourcesBar_Panel = FindObjectOfType<PlantRecourcesBar_Panel>();
+        Debug.Assert(m_chosenPlants.Count <= plantResourcesBar_Panel.transform.childCount);
         
         m_sunlightText.text = SunlightCount.ToString();
 
         // For each child of plantResourcesBar_Panel,
         // If we have chosen a plant that's meant to be at this resource bar index, set the UI as we wanted to.
         // If the current index has no chosen plant, set it inactive
-        for (int i = 0; i < m_plantResourcesBar_Panel.transform.childCount; ++i)
+        for (int i = 0; i < plantResourcesBar_Panel.transform.childCount; ++i)
         {
             if (i < m_chosenPlants.Count)
             {
-                m_plantResourcesBar_Panel.transform.GetChild(i).GetComponent<PlantResource>().SetPlant(m_chosenPlants[i]);
+                plantResourcesBar_Panel.transform.GetChild(i).GetComponent<PlantResource>().SetPlant(m_chosenPlants[i]);
             }
             else
             {
-                m_plantResourcesBar_Panel.transform.GetChild(i).gameObject.SetActive(false);
+                plantResourcesBar_Panel.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
 

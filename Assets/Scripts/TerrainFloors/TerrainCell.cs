@@ -23,6 +23,7 @@ public class TerrainCell : MonoBehaviour
         {
             Instantiate(m_gameManager.SelectedPlant, transform.position, Quaternion.identity);
 
+            m_gameManager.AddSunlightCount(-m_gameManager.SelectedPlant.Cost);
             m_gameManager.SelectedPlant = null;
             m_gameManager.SelectedPlant_Image.sprite = null;
             m_gameManager.SelectedPlant_Image.color = new Color(0, 0, 0, 0);

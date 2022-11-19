@@ -2,14 +2,20 @@ using UnityEngine.UI;
 using UnityEngine;
 
 /// <summary>
-/// Resource of Plant that can be planted in the game. Attach this script to an UI element
+/// Attach this script to an UI element, mouse click will create a plant to be planted
 /// </summary>
 public class PlantResource : MonoBehaviour
 {
+    // The plant's prefab to instantiate, will be initialized in GameManager::Awake()
     private Plant m_plantPrefab = null;
 
+    // The text for sunlight cost
     private TMPro.TextMeshProUGUI m_cost_Text = null;
+
+    // The icon for plant's prefab
     private Image m_plantIcon_Image = null;
+
+    // Cached game manager instance
     private GameManager m_gameManager = null;
 
     private void Awake()
@@ -24,12 +30,12 @@ public class PlantResource : MonoBehaviour
     {
         Debug.Assert(m_plantPrefab != null);
 
-        if (m_gameManager.SunlightCount >= m_plantPrefab.Cost)
+        if (m_gameManager.SunlightCount >= m_plantPrefab.Cost &&    // Has enough sunlight
+            m_gameManager.SelectedPlant != m_plantPrefab)           // 
         {
             m_gameManager.SelectedPlant = m_plantPrefab;
             m_gameManager.SelectedPlant_Image.sprite = m_plantIcon_Image.sprite;
-            m_gameManager.SelectedPlant_Image.color = Color.white;
-            m_gameManager.AddSunlightCount(-m_plantPrefab.Cost);
+            m_gameManager.SelectedPlant_Image.color = Color.white;            
         }
     }
 

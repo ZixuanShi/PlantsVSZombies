@@ -1,7 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 public class PlantsGenerator : MonoBehaviour
 {
     [SerializeField]
@@ -29,4 +30,5 @@ public class PlantsGenerator : MonoBehaviour
             }
         }
     }
+}
 }

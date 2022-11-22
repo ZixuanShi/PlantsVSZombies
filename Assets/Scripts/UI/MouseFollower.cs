@@ -1,5 +1,7 @@
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Set this UI element always follow mouse's position
 /// </summary>
@@ -9,4 +11,5 @@ public class MouseFollower : MonoBehaviour
     {
         transform.position = Input.mousePosition;
     }
+}
 }

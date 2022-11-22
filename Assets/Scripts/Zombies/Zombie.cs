@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 public class Zombie : ObjectBase
 {
     [SerializeField]
@@ -58,4 +59,5 @@ public class Zombie : ObjectBase
             yield return new WaitForSeconds(m_attackCooldown);
         }
     }
+}
 }

@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Bare minimal class for plants and zombies
 /// </summary>
@@ -28,4 +28,5 @@ public class ObjectBase : MonoBehaviour
             Destroy(gameObject);
         }
     }
+}
 }

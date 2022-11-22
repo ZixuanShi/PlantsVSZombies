@@ -1,7 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
+/// <summary>
+/// Projectile to be shot by shooters
+/// </summary>
 public class Projectile : MonoBehaviour
 {
     [SerializeField]
@@ -25,4 +28,5 @@ public class Projectile : MonoBehaviour
     }
 
     public void SetDamage(int damage) { m_damage = damage; }
+}
 }

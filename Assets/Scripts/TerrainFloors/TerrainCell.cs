@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
+namespace PVZ
+{
 /// <summary>
 /// A cell on terrain floor. 
 /// </summary>
@@ -39,4 +38,5 @@ public class TerrainCell : MonoBehaviour
     {
         m_spriteRenderer.color = new Color(0, 0, 0, 0);
     }
+}
 }

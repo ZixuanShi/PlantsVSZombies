@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Generates sunlight with the given cooldown
 /// </summary>
@@ -49,4 +50,5 @@ public class SunlightGenerator : MonoBehaviour
             yield return new WaitForSeconds(m_cooldown);
         }
     }
+}
 }

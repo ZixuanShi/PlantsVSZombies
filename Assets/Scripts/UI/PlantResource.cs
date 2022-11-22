@@ -1,6 +1,8 @@
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
+namespace PVZ
+{
 /// <summary>
 /// Attach this script to an UI element, mouse click will create a plant to be planted
 /// </summary>
@@ -53,4 +55,5 @@ public class PlantResource : MonoBehaviour
         m_cost_Text = transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>();
         m_cost_Text.text = m_plantPrefab.Cost.ToString();
     }
+}
 }

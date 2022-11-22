@@ -1,5 +1,5 @@
-using UnityEngine;
-
+namespace PVZ
+{
 [System.Serializable]
 
 // How fast to recharge to summon a new one
@@ -31,4 +31,5 @@ public enum EDamage
 {
     kNone = 0,
     kNormal = 5,
+}
 }

@@ -3,25 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Generates zombies in waves, attach to game manager
 /// </summary>
 public class ZombieGenerator : MonoBehaviour
 {
-    [SerializeField]
-    private List<Zombie> m_chosenZombiePrefabs = new List<Zombie>();
+    private GameManager m_gameManager = null;
 
     private List<Vector3> m_zombieSpawningPositions = new List<Vector3>();
 
     private void Awake()
     {
+        m_gameManager = FindObjectOfType<GameManager>();
+
         ZombieSpawningPoint spawningPoint = FindObjectOfType<ZombieSpawningPoint>();
         foreach (Transform child in spawningPoint.transform)
         {
             m_zombieSpawningPositions.Add(child.transform.position);
         }
-
-        int randomSpawningPositionIndex = UnityEngine.Random.Range(0, m_zombieSpawningPositions.Count);
-        Instantiate(m_chosenZombiePrefabs[0], m_zombieSpawningPositions[randomSpawningPositionIndex], Quaternion.identity);
     }
+
+    private IEnumerator SpawnZombies()
+    {
+        while (true)
+        {
+
+
+            yield return null;
+        }
+    }
+}
 }

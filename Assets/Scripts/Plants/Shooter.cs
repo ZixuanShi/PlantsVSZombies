@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Attach to a plant, shoot a projectile if there's a zombie in front of this plant
 /// </summary>
@@ -60,4 +61,5 @@ public class Shooter : MonoBehaviour
             yield return new WaitForSeconds(m_cooldown);
         }
     }
+}
 }

@@ -1,5 +1,7 @@
 using UnityEngine;
 
+namespace PVZ
+{
 /// <summary>
 /// Required base class for all plants
 /// </summary>
@@ -18,4 +20,5 @@ public class Plant : ObjectBase
     {
         RechargeTime = (float)RechargeType;
     }
+}
 }

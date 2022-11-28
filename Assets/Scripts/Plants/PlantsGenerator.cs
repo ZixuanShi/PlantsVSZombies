@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace PVZ
 {
+/// <summary>
+/// Attach to the game manager
+/// </summary>
 public class PlantsGenerator : MonoBehaviour
 {
     [SerializeField]

@@ -2,24 +2,25 @@ using UnityEngine;
 
 namespace PVZ
 {
-public class LinearMover : MonoBehaviour
-{
-    [Tooltip("Which way to move"), SerializeField]
-    private Vector3 m_direction = Vector3.left;
-
-    [Tooltip("How fast this object to move")]
-    [SerializeField]
-    [Range(0.0f, float.MaxValue)]
-    private float m_moveSpeed = 5.0f;
-
-    public bool CanMove { get; set; } = true;
-
-    private void Update()
+    public class LinearMover : MonoBehaviour
     {
-        if (CanMove)
+        [Tooltip("Which way to move"), SerializeField]
+        [field: SerializeField]
+        public Vector3 Direction { get; set; } = Vector3.left;
+
+        [Tooltip("How fast this object to move")]
+        [field: SerializeField]
+        public float MoveSpeed { get; set; } = 5.0f;
+
+        [field: SerializeField]
+        public bool CanMove { get; set; } = true;
+
+        private void Update()
         {
-            transform.position += m_direction * m_moveSpeed * Time.deltaTime;
+            if (CanMove)
+            {
+                transform.position += Direction * MoveSpeed * Time.deltaTime;
+            }
         }
     }
-}
 }

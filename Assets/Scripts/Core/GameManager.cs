@@ -14,11 +14,12 @@ namespace PVZ
         [SerializeField]
         private List<Plant> m_chosenPlants = new List<Plant>();
 
+        [Tooltip("The image that follows the cursor all the time, if we have an active chosen plant, set the image to that plant's icon")]
         [field: SerializeField]
         public Image SelectedPlant_Image { get; set; } = null;
 
-        [field: SerializeField]
         [Tooltip("Current sunlight count the player owns. Changed by collecting sunlight or planting plants")]
+        [field: SerializeField]
         public int SunlightCount { get; private set; } = 0;
 
         [SerializeField]

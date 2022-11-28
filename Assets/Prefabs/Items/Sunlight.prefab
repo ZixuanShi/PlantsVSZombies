@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5829953421907418721}
   - component: {fileID: 5829953421907418751}
   - component: {fileID: 438432019419931244}
+  - component: {fileID: 5679884602255691006}
   m_Layer: 0
   m_Name: Sunlight
   m_TagString: Untagged
@@ -125,3 +126,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_amount: 50
+--- !u!114 &5679884602255691006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829953421907418722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff05033d3a32614aa410724a50730f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Direction>k__BackingField: {x: -1, y: 0, z: 0}
+  <MoveSpeed>k__BackingField: 5
+  <CanMove>k__BackingField: 0

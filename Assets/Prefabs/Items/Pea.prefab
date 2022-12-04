@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 167361235462623068}
   - component: {fileID: 3992934107361653553}
   - component: {fileID: 1661300440374526140}
+  - component: {fileID: 914216153991072745}
   m_Layer: 0
   m_Name: Pea
   m_TagString: Untagged
@@ -147,3 +148,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &914216153991072745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992934107361653552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff05033d3a32614aa410724a50730f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Direction>k__BackingField: {x: 1, y: 0, z: 0}
+  <MoveSpeed>k__BackingField: 4
+  <CanMove>k__BackingField: 1

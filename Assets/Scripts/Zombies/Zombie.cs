@@ -53,15 +53,26 @@ namespace PVZ
             }
         }
 
+        /// <summary>
+        /// Overriden TakeDamage function for zombies
+        /// </summary>
+        /// <param name="damage"></param>
         public override void TakeDamage(int damage)
         {
+            // If a helmet presents, use it to take damage first, then take the left overs if there's any
             if (m_helmet != null && !m_helmet.IsBroken())
             {
-                m_helmet.TakeDamage(damage);
+                damage = m_helmet.TakeDamage(damage);                
             }
-            else
+
+            if (damage > 0)
             {
-                base.TakeDamage(damage);
+                Heath -= damage;
+            }
+
+            if (Heath <= 0)
+            {
+                StartCoroutine(OnDead());
             }
         }
 
@@ -70,9 +81,40 @@ namespace PVZ
             while (m_isAttacking)
             {
                 plant.TakeDamage(Damage);
-                m_attackSource.PlayOneShot(m_attackAudioClip);
+                m_attackSource.PlayOneShot(m_attackAudioClip, PlayerSettingsManager.s_SoundEffectsVolumeScale);
                 yield return new WaitForSeconds(m_attackCooldown);
             }
+        }
+
+        /// <summary>
+        /// Sequence of Todo list when a zombie is dead
+        /// </summary>
+        /// <returns></returns>
+        private IEnumerator OnDead()
+        {
+            // Stop attacking
+            m_isAttacking = false;
+
+            // Set animation to play death
+            m_animator.SetBool("IsDead", true);
+
+            // Figure out the time to wait for death animation
+            float waitTime = 0.0f;
+            RuntimeAnimatorController runtimeAnimatorController = m_animator.runtimeAnimatorController;
+            for (int i = 0; i < runtimeAnimatorController.animationClips.Length; ++i)
+            {
+                if (runtimeAnimatorController.animationClips[i].name == "Zombie_Animation_Dead")
+                {
+                    waitTime = runtimeAnimatorController.animationClips[i].length;
+                    break;
+                }
+            }
+
+            // Wait until the animation ends
+            yield return new WaitForSeconds(waitTime);
+
+            // This Zombie officially dies now
+            Destroy(gameObject);
         }
     }
 }

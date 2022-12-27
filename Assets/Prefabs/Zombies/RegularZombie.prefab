@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8947473971768868771}
   m_Layer: 6
-  m_Name: bone_6
+  m_Name: Sk_Leg_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3399648710439753503}
   m_Layer: 6
-  m_Name: bone_1
+  m_Name: Sk_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -852,7 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182964483848033432}
   m_Layer: 6
-  m_Name: bone_3
+  m_Name: Sk_Arm_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,7 +883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148848037223108962}
   m_Layer: 6
-  m_Name: bone_2
+  m_Name: Sk_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5745067681896377938}
   m_Layer: 6
-  m_Name: bone_7
+  m_Name: Sk_Leg_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,7 +947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5279965326241545677}
   m_Layer: 6
-  m_Name: bone_5
+  m_Name: Sk_Hip_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,7 +979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7888379068567757631}
   m_Layer: 6
-  m_Name: bone_4
+  m_Name: Sk_Arm_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

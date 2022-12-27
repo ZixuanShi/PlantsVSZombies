@@ -11,7 +11,7 @@ namespace PVZ
         public Sprite IconSprite { get; private set; } = null;
 
         [field: SerializeField]
-        public int Heath { get; private set; } = 10;
+        public int Heath { get; protected set; } = 10;
 
         [field: SerializeField]
         public int Damage { get; private set; } = 5;

@@ -48,8 +48,10 @@ namespace PVZ
         /// Take damage. Update helmet sprite if needed
         /// </summary>
         /// <param name="damage">the damage to substract durability</param>
-        public void TakeDamage(int damage)
+        /// <returns>How many damage left that's not fully taken by this helmet</returns>
+        public int TakeDamage(int damage)
         { 
+            int leftOverDamage = -(m_currentDurability - damage);
             m_currentDurability -= damage;
 
             if (m_currentDurability < m_durability && m_currentDurability > m_durability * 0.66f)
@@ -68,6 +70,8 @@ namespace PVZ
             {
                 m_spriteRenderer.sprite = null;
             }
+
+            return leftOverDamage;
         }
 
         /// <returns>true if this helmet is broken, false if not</returns>

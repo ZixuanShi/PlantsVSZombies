@@ -55,8 +55,8 @@ namespace PVZ
                     Projectile projectile = Instantiate(m_projectilePrefab, m_shootPosition, Quaternion.identity);
                     projectile.SetDamage(m_ownerPlant.Damage);
                     projectile.SetEffect(m_effect);
-
                 }
+
                 yield return new WaitForSeconds(m_cooldown);
             }
         }

@@ -10,13 +10,16 @@ namespace PVZ
     public class Shooter : MonoBehaviour
     {
         [Tooltip("Cooldown to shoot a bullet")]
-        [SerializeField] private float m_cooldown = 5.0f;
+        [SerializeField] 
+        private float m_cooldown = 5.0f;
 
         [Tooltip("The projectile's prefab to instantiate when shooting")]
-        [SerializeField] private Projectile m_projectilePrefab = null;
+        [SerializeField] 
+        private Projectile m_projectilePrefab = null;
 
         [Tooltip("How far this shooter can shoot")]
-        [SerializeField] private float m_range = 10.0f;
+        [SerializeField] 
+        private float m_range = 10.0f;
 
         private EffectBase m_effect = null;
 
@@ -28,6 +31,7 @@ namespace PVZ
             m_ownerPlant = GetComponent<Plant>();
             m_effect = GetComponent<EffectBase>();
 
+            // Find the shoot position to spawn a projectile
             Transform shootPoint = m_ownerPlant.transform.Find("ShootPosition");
             Debug.Assert(shootPoint != null);
             m_shootPosition = shootPoint.position;
@@ -46,6 +50,9 @@ namespace PVZ
             return raycastHit2D.collider != null;
         }
 
+        /// <summary>
+        /// Shoot a projectile if there's a target ahead
+        /// </summary>
         private IEnumerator ShootIfHasTarget()
         {
             while (true)

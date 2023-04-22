@@ -4,7 +4,7 @@ namespace PVZ
 {
     public class LinearMover : MoverBase
     {
-        [Tooltip("Which way to move"), SerializeField]
+        [Tooltip("Which way to move")]
         [field: SerializeField]
         public Vector3 Direction { get; set; } = Vector3.left;
 

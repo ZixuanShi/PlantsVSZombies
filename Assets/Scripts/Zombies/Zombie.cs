@@ -31,7 +31,8 @@ namespace PVZ
         private void OnCollisionEnter2D(Collision2D collision)
         {
             Plant plant = collision.gameObject.GetComponent<Plant>();
-
+            
+            // If collided with a plant, we want to attack this plant
             if (plant != null)
             {
                 m_linearMover.CanMove = false;
@@ -44,6 +45,7 @@ namespace PVZ
 
         private void OnCollisionExit2D(Collision2D collision)
         {
+            // If a plant is gone, don't attack any more and continue moving
             if (collision.gameObject.GetComponent<Plant>() != null)
             {
                 m_linearMover.CanMove = true;
@@ -76,6 +78,10 @@ namespace PVZ
             }
         }
 
+        /// <summary>
+        /// Attacks a targetted plant
+        /// </summary>
+        /// <param name="plant">The plant to attack</param>
         private IEnumerator Attack(Plant plant)
         {
             while (m_isAttacking)
